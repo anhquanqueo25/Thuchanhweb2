@@ -1,23 +1,44 @@
- /* *{
-    padding: 0 50px 0 50px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background: #fff;
+.header
+{
+   height: 65px;
+   background-color: #fff;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 10%;
+    /* z-index: 2;
+   position: fixed; */
+   
 }
-header{
-position:fixed ;
-z-index: 1;
-width: 100%;
-top: 0;
-align-items: center;
-display: flex;
-justify-content:space-between;
-background: cornsilk;
-height: 80px;
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(114, 105, 105);
+    text-decoration: none;
+    list-style: none; 
+    
+}
+
+.nav li { 
+    display: inline-block;
+    padding:  0 14px;
+    
+}
+.nav li:hover a{
+    color: red;
+   
+}
+.logo{
+    cursor: pointer;  
 }
 header.logo{
     margin-left: 80px;
@@ -30,35 +51,13 @@ header.navbar a{
     margin-left: 2rem;
     text-decoration: none;
 }
+/* ///// */
 .luachon{
     font-size: 1.3rem;
     margin-left: 2.5rem;
     text-decoration: none;
 }
-.a1{
-    cursor: pointer;
-    text-decoration: none;   
-    color:grey;
-}
-.a2{
-    cursor: pointer;
-    margin-left: 30px;
-    text-decoration: none;   
-    color:grey;;
-}
-.a3{
-    cursor: pointer;
-    margin-left: 30px;
-    text-decoration: none;
-    color:grey;;   
-}
-.a4{
-    cursor: pointer;
-    margin-left: 30px;
-    margin-right: 50px;
-    text-decoration: none;
-    color:grey;;   
-} 
+
 .hinh1{
     margin-left: 300px;
     margin-top: 20px;
@@ -266,28 +265,15 @@ header.navbar a{
 .headerbt{
     width: 100%;
     bottom: 0;
-    background:cornsilk;
-    position:fixed;
+   
+    /* position:fixed; */
     height: 55px;
     justify-content:space-between;
     align-items: center;
     
 }
- .noidungbt{
-    top: 27px;
-    margin-left: 40%;
-    position: absolute;
-} 
-.link1{
-    display: flex;
-}
-.link2{
-    display: flex;
-}
-.link3{
-    display: flex;
-}
-.footer-item_link{
+.footer-link{
+    margin-top: 50px;
     color:brown;
     text-decoration: none;
     
@@ -301,11 +287,18 @@ header.navbar a{
     margin-top: 7px;
 }
 .link-list--item-f{
-margin-left: 550px;
+margin-left: 593px;
 }
 .link-list--item-i{
 margin-left: 50px;
 }
 .link-list--item-t{
     margin-left: 50px;
+}
+.footer-noidung 
+{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 615px;
+   padding-bottom: 50px;
 }
