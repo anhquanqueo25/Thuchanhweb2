@@ -1,0 +1,99 @@
+:root{
+    --primary-color: rgb(226, 210, 210);
+    --secondary-color: rgb(233, 233, 210);
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    
+}
+.boxed {
+    width: 20rem;
+    height: 20rem;
+    background-image: linear-gradient(to right bottom, #333 50%, #34afff 50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+.tittle{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    background-image: linear-gradient(to left top, rgb(161, 33, 33), var(--secondary-color));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(51, 51, 51, 0.726) , rgba(52, 174, 255, 0.37) ), url("https://images.unsplash.com/photo-1587314060644-52679a4967f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+}
+.shadow{
+    width: 20rem;
+    height: 20rem;
+    background-color: black;
+    margin: 5rem auto;
+    box-shadow: 5px 5px 10px 5px rgba(255, 0, 0, 0.575);
+}
+.shadow--text{
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 9px -1px 7px var(--secondary-color);
+}
+.tittle-text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: orange;
+
+}
+/* h2 {
+    color: green !important;
+} */
+#tittle-text{
+    color: red;
+}
+ul li {
+    font-size: 4rem;
+    font-weight: bold;
+}
+li:first-child{
+    color: red;
+}
+li:last-child{
+    color: orange;
+}
+li:nth-child(2){
+    color:green;
+}
+li:nth-child(4){
+    color:rgba(52, 174, 255, 0.37)
+}
+li:not(:last-child){
+    color: yellow;
+}
+.crush{
+    display: inline-block;
+    margin-top: 15%;
+   margin-left: 8rem;
+    font-size: 10rem;   
+    font-weight: bold;
+    color: white;
+    
+}
+.crush:hover{
+    background-image: linear-gradient(to left top, rgb(218, 40, 108), var(--secondary-color));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: pointer;
+}
